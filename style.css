@@ -1,5 +1,5 @@
 .FirstView {
-  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 100px;
@@ -631,5 +631,17 @@ h2 {
 @media screen and (max-width: 1024px) {
   .About__reskilling-logo {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .FirstViewContent__button:hover {
+    opacity: .8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .HeaderNavListItem__button:hover {
+    opacity: .8;
   }
 }
