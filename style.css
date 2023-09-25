@@ -338,7 +338,9 @@ h2 {
   z-index: 10;
 }
 
-
+.FixedFooter--is-hidden {
+  display: none !important;
+}
 
 @media screen and (max-width: 1080px) {
   .Header {
@@ -363,7 +365,7 @@ h2 {
   .HeaderNavList {
   overflow-y: scroll;
   position: fixed;
-  top: 60px;
+  top: 52px;
   left: 100%;
   width: 100%;
   display: block;
@@ -430,8 +432,15 @@ h2 {
 }
 
 @media screen and (max-width: 1080px) {
+  .HeaderNavHamburger__line:last-child {
+    top: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
   .HeaderNavHamburger__line {
   position: absolute;
+  top: 50%;
   display: block;
   width: 100%;
   height: 3px;
@@ -643,5 +652,15 @@ h2 {
 @media screen and (min-width: 768px) {
   .HeaderNavListItem__button:hover {
     opacity: .8;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .FixedFooter {
+    background-color: #f4f5f7;
+    bottom: 0;
+    height: 114px;
+    right: 0;
+    width: 100%;
   }
 }
